@@ -10,9 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="container">
+<body class="">
     <!-- header section start -->
-    <header class="mt-4">
+    <header class="mt-4 container" >
        <div class="flex justify-around">
             <div>
                 <h1 class="text-3xl font-extrabold">Econo-Ticket</h1>
@@ -25,27 +25,97 @@
                     <li>Search</li>
                 </ul>
             </nav>
-            <div class="flex gap-4 bg-green-100 py-2 px-3 rounded-lg">
+            <div class="flex gap-4 bg-green-100 py-2 px-3 rounded-lg ">
                 <h5>Bus</h5>
                 <img src="images/bus-icon.png" alt="">
             </div>
        </div>
         
-        <!-- display section start -->
-        <section>
-            <img src="images/banner.png" alt="">
+        <!-- banner section start -->
+        <section class="">
+           <div style="background-image: url(images/banner.png); background-repeat: no-repeat;" class="text-center text-white min-h-screen ml-24 flex flex-col justify-center items-center gap-5">
+            <h1 class="text-4xl text-white font-bold">End-to-End Travel with P Paribahan <br> <span class="text-green-500">P Paribahan</span></h1>
+            <p class="text-gray-400">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined.</p>
+            <button class="btn text-black bg-green-500">Buy Tickets</button>
+           </div>
         </section>
     </header>
     <!-- header section end -->
     <!-- main section start -->
-    <main>
+    <main class="container">
+        <h1 class="text-center text-4xl font-bold py-5">Best offers for you</h1>
+        <div class="flex items-center gap-20 justify-center">
+            <div class="flex items-center gap-4 bg-orange-500 p-10">
+                <div>
+                    <h2 class="text-3xl font-extrabold">15% OFF</h2>
+                    <p class="text-black">on your next purchase <br> <span class="text-gray-700">use by January 2024</span></p>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold">NEW15</h2>
+                    <p>Coupon Code</p>
+                </div>
+            </div>
 
+            <div class="flex items-center gap-4 bg-pink-500 p-12">
+                <div>
+                    <h2 class="text-3xl font-extrabold">20% OFF</h2>
+                <p class="text-black">on your next purchase <br> <span class="text-gray-700">>use by January 2024</span></p>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold">Couple 20</h2>
+                    <p>Coupon Code</p>
+                </div>
+            </div>
+        </div>
+        <button class="btn flex mx-auto my-8 border-green-500 text-green-600 bg-white">see all offers</button>
+            <!-- paribahan section -->
+            <section>
+                <h1>P.H Paribahan</h1>
+                <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                <div>
+                    <div class="flex">
+                        <div>
+                            <img src="images/bus-icon.png" alt="">
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/fare.png" alt="">
+                    <h2>550 Taka</h2>
+                    <p> Per Seat</p>
+                </div>
+            </section>
     </main>
     <!-- main section end -->
     <!-- footer section start -->
-    <footer>
-
-    </footer>
+    <footer class="footer p-10 bg-base-200 text-base-content">
+        <aside class="flex items-center space-x-2">
+          <img src="images/business.png" alt="">
+          <h3 class="text-text text-3xl font-extrabold text-garamond">Justice</h3>
+        </aside> 
+        <nav>
+          <header class="text-text text-3xl font-extrabold text-garamond">Services</header> 
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav> 
+        <nav>
+          <header class="text-text text-3xl font-extrabold text-garamond">Company</header> 
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav> 
+        <nav>
+          <header class="text-text text-3xl font-extrabold text-garamond">Legal</header> 
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+          <button class="inline-block self-end bg-primary-color text-white font-bold rounded-lg px-6 py-2 uppercase text-sm">Send Message</button>
+        </nav>
+      </footer>
 
 
 
