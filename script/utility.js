@@ -20,11 +20,17 @@ function setNumberElementById(elementId ,value){
     const element = document.getElementById(elementId);
     element.innerText = value
 }
-function getNumberElementById(elementId){
-    const element = document.getElementById(elementId);
-    const elementText = element.innerText;
-    const value = parseInt(elementText);
-    return value;
+function setTotalCostById(elementId, value){
+    const element = document.getElementById(elementId).innerText;
+    const convertedCost = parseInt(element);
+    const sum = convertedCost + parseInt(value);
+    setNumberElementById(elementId, sum)
+}
+function setGrandCostById(elementId, value){
+    const element = document.getElementById(elementId).innerText;
+    const convertedCost = parseInt(element);
+    const sum = convertedCost + parseInt(value);
+    setNumberElementById(elementId, sum)
 }
 function getTextElementById(elementId){
     const element = document.getElementById(elementId);
