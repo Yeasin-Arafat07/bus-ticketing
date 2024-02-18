@@ -13,12 +13,12 @@
 <body class="">
     <!-- header section start -->
     <header id="header" class="mt-4 container" >
-       <div class="flex justify-around items-center py-2">
+       <div class="flex flex-col lg:flex-row justify-around items-center py-2">
             <div>
                 <h1 class="text-3xl font-extrabold">Econo-Ticket</h1>
             </div>
             <nav>
-                <ul class="flex gap-4">
+                <ul class="flex flex-col lg:flex-row gap-4">
                     <li>Home</li>
                     <li>About</li>
                     <li>Destination</li>
@@ -45,7 +45,7 @@
     <!-- main section start -->
     <main id="main" class="container">
         <h1 class="text-center text-4xl font-bold py-5">Best offers for you</h1>
-        <div class="flex items-center gap-20 justify-center">
+        <div class="flex flex-col lg:flex-row items-center gap-20 justify-center">
             <div class="flex items-center gap-4 bg-orange-500 p-10 rounded-lg">
                 <div>
                     <h2 class="text-3xl font-extrabold">15% OFF</h2>
@@ -75,7 +75,7 @@
                     <h1 class="text-black text-3xl font-bold">P.H Paribahan</h1>
                   <p class="my-4">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
                 </div>
-                <div class="flex justify-center gap-40 items-center">
+                <div class="flex flex-col lg:flex-row justify-center gap-40 items-center">
                     <div class="">
                         <div class="flex gap-40">
                             <div class="flex w-full items-center gap-2">
@@ -83,21 +83,21 @@
                                 <div><h1 class="text-black ">Greenline Paribahan</h1>
                                 <p>Coach-009-WEB ! AC_Business</p></div>
                             </div>
-                            <div class="flex w-full gap-2">
+                            <div class="flex flex-col lg:flex-row lg:w-full gap-2">
                                 <img class="w-8 h-6" src="images/seat-green.png" alt="">
                                 <p class=""><span id="seat-left">28</span> Seats left</p>
                             </div> 
                         </div>
                         
-                        <div class="flex gap-80 bg-gray-100 p-5 rounded-sm mt-5">
+                        <div class="flex  lg:gap-80 bg-gray-100 p-5 rounded-sm mt-5">
                             <p>Route</p>
                             <h1>Dhaka - Sylhet</h1> 
                         </div>
-                        <div class="flex gap-80 bg-gray-100 pl-5">
+                        <div class="flex lg:gap-80 bg-gray-100 pl-5">
                             <p>Route</p>
                             <h1>Dhaka - Sylhet</h1>
                         </div>
-                        <div class="flex gap-5 bg-gray-100 p-3 rounded-sm">
+                        <div class="flex flex-col lg:flex-row gap-5 bg-gray-100 p-3 rounded-sm">
                             <h1 class="bg-gray-200 p-1 rounded-lg">Boarding Point - Laxmipur</h1>
                             <h1 class="bg-gray-200 p-1 rounded-lg">Dropping Point - Bogura</h1>
                             <h1 class="bg-gray-200 p-1 rounded-lg">Est. Time - 11 Hour</h1>
@@ -118,7 +118,7 @@
             <section id="bus-seat" class="py-16">
                 <div class="flex flex-col lg:flex-row justify-around">
                     <div>
-                        <h1>Select Your Seat</h1>
+                        <h1 class="text-2xl font-extrabold text-center">Select Your Seat</h1>
 
                         <div class="flex gap-40 mt-4">
                             <div class="flex w-full gap-2">
@@ -140,7 +140,7 @@
                             </div>
                         </div>
                         <!-- bus seat -->
-                        <div class="grid gap-x-8 gap-y-4 grid-cols-4 mt-5">
+                        <div class="grid gap-x-8 gap-y-4 grid-cols-3 lg:grid-cols-4 mt-5">
                             <div id="A1" class="seat bg-slate-400 w-16 h-10 rounded-lg text-center">A1</div>
                             <div id="A2" class="seat bg-slate-400 w-16 h-10 rounded-lg text-center">A2</div>
                             <div id="A3" class="seat bg-slate-400 w-16 h-10 rounded-lg text-center">A3</div>
@@ -173,10 +173,10 @@
                     </div>
         
                     <div>
-                        <h1>Fill the Form</h1>
+                        <h1 class="text-2xl font-extrabold text-center">Fill the Form</h1>
                         <div>
                             <div id="Name-price" class="">
-                                <div class="flex gap-40">
+                                <div class="flex gap-20 lg:gap-40">
                                     <h1 class="text-lg">Seat <span id="Seat-count">0</span> </h1>
                                     <h1 class="text-lg">Class</h1>
                                     <h1 class="text-lg">Price</h1>       
@@ -186,16 +186,16 @@
                                 class="Selected-place">
                                     
                                 </div>
-                                <div class="flex gap-80">
+                                <div class="flex gap-40 lg:gap-80">
                                     <h1 class="pt-3 text-xl text-black">Total Price</h1>
                                     <p class="pt-3 text-xl">BDT <span id="total-cost">0</span></p>
                                 </div>
                             </div>
-                            <div class="flex gap-40 py-4">
-                                <input class="border rounded-lg border-gray-600" type="text" placeholder="Have any Coppun">
-                                <button class="bg-green-400 btn p-2 px-4 rounded-lg text-white font-bold">Apply</button>
+                            <div class="flex gap-20 lg:gap-40 py-4">
+                                <input autocomplete="off" id="userName" class="border rounded-lg border-gray-600" type="text" placeholder="Have any Coupon">
+                                <button disabled id="submit" class="bg-green-400 btn p-2 px-4 rounded-lg text-white font-bold">Apply</button>
                             </div>
-                            <div class="flex gap-80 my-3" >
+                            <div class="flex gap-20 lg:gap-80 my-3" >
                                 <h1 class="pt-3 text-xl text-black">Grand Total</h1>
                                 <p class="pt-3 text-xl">BDT <span id="grand-total">0</span></p>
                             </div>

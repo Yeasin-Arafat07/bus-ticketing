@@ -72,3 +72,17 @@ const allSeat = document.getElementsByClassName('seat')
         showElementById('success');
 
     }
+
+    // coupon section
+
+    const submitButton = document.getElementById('submit');
+    const input = document.getElementById('input');
+
+    input.addEventListener("keyup", (e) => {
+        const value = e.currentTarget.value;
+        if(value === "NEW15" || "Couple 20"){
+            submitButton.disabled = true;
+        }else{
+            submitButton.disabled = false
+        }
+    })
