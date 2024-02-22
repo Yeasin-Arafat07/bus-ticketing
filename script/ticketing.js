@@ -26,7 +26,8 @@ const allSeat = document.getElementsByClassName('seat')
             const seatName = e.target.innerText;
             const SelectedPlace = document.getElementById('Selected-place');
             // color area
-            e.target.style.backgroundColor = "green";
+            e.target.style.backgroundColor = "green";         
+            e.target.setAttribute("disabled", false);
             e.target.setAttribute = 'disable';
 
             const li = document.createElement('li');
@@ -81,7 +82,7 @@ const allSeat = document.getElementsByClassName('seat')
     input.addEventListener("keyup", (e) => {
         const value = e.currentTarget.value;
         if(value === "NEW15" || "Couple 20"){
-            submitButton.disabled = true;
+            submitButton.disabled = false;
         }else{
             submitButton.disabled = false
         }
